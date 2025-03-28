@@ -1,0 +1,152 @@
+<!-- Archivo: index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Model S</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -30px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .hero img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+        .hero-content h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .hero-content p {
+            font-size: 18px;
+        }
+        .proyectos {
+            padding: 50px 20px;
+        }
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .proyecto {
+            text-align: center;
+            max-width: 300px;
+        }
+        .proyecto img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .proyecto p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arquitectura Model S</h1>
+        <nav>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Diseño Innovador para el Futuro</h2>
+            <p>Explora nuestros proyectos arquitectónicos modernos y sostenibles.</p>
+        </div>
+        <img src="Imagenes/corte22.png" alt="Imagen temática del proyecto">
+    </section>
+    
+    <section id="proyectos" class="proyectos">
+        <h2>Nuestros Proyectos</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="Imagenes/Imagen2.png" alt="Proyecto 1">
+                <p>Analisis de la población</p>
+            </div>
+            <div class="proyecto">
+                <img src="Imagenes/Imagen3.png" alt="Proyecto 2">
+                <p>Solucion de problematicas locales</p>
+            </div>
+            <div class="proyecto">
+                <img src="Imagenes/Imagen4.png" alt="Proyecto 3">
+                <p>Relación de producto con el entorno</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contacto">
+        <p>Contacto: sssantiagosolerd@gmail.com</p>
+    </footer>
+</body>
+</html>
